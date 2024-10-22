@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Strategic Direction & Case Studies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-image {
+            object-fit: cover; /* this makes the image covers the area */
+            position: absolute; /* this positions it absolute */
+            top: 0; /* this aligns image to top */
+            left: 0; /* this aligns image to left */
+            width: 100%; /* this is done to cover full width */
+            height: 100%; /* this is done to cover full height */
+            z-index: -1; /* this places the image behind our content */
+        }
+
+        /* this is to specify color-bg "mocha-green" and use it in different parts of code when needed*/
+        .mocha-green {
+            background-color: #ACAC56;
+        }
+
+        /* Applying styles for FAQ boxes */
+        details {
+            border: none;
+        }
+        summary::-webkit-details-marker {
+            display: none; /* Hide default marker */
+        }
+        details[open] summary {
+            font-weight: bold; /* Bold text when open */
+        }
+    </style>
+</head>
+<body class="relative bg-white text-black font-sans">
+
+    <!--this section is for navigation bar  -->
+    <nav class="flex justify-between items-center p-6 bg-white shadow-md"><!--this creates perfect spaces between logo and navlinks--> 
+        <div class="text-2xl font-bold text-green-800">
+            <!-- adding logo -->
+            <img src="logo.svg" alt="Logo" class="h-10 inline-block"> 
+        </div>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="text-gray-700 hover:text-gray-900">Home</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-gray-900">Page 1</a></li>
+        </ul>
+    </nav>
+
+    <!--Contents of homepage  -->
+    <div class="relative h-screen flex justify-center items-center">
+        <img class="bg-image" src="homepage.png" alt="Background Image"> 
+        <div class="bg-white bg-opacity-90 w-11/12 max-w-6xl p-6 rounded-lg shadow-lg flex">
+            <div class="w-1/2 space-y-4">
+                <span class="text-sm text-gray-600">01/03</span>
+                <h1 class="text-4xl font-bold text-gray-900">We help our clients set their strategic direction</h1>
+                <p class="text-gray-500">Images from Freepik</p>
+            </div>
+            <div class="w-1/2">
+                <img class="w-full h-auto rounded-lg shadow-md" src="1image.jpg" alt="Client Image"> 
+            </div>
+        </div>
+    </div>
+
+    <!-- This is for business idea page -->
+    <div class="max-w-7xl mx-auto p-8 bg-white">
+        <div class="text-center mb-10">
+            <h1 class="text-5xl font-bold text-black">We'll help manage your business</h1>
+            <p class="mt-4 text-2xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+            <p class="mt-2 text-black">Images from <a href="#" class="underline text-black">Freepik</a></p>
+        </div>
+        <!-- creating containers(replicated-used for adding new cards with same effects) for our cards and arranging then with grid -->
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"><!--specifying columns for arrangement of cards-->
+
+            <div class="relative bg-white overflow-hidden shadow-md w-full h-64 hover:bg-gray-800 transition duration-300 ease-in-out">
+                <img src="consultations.jpg" alt="Consultations" class="w-full h-full object-cover opacity-100 hover:opacity-75 transition-opacity duration-300">
+                <h3 class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold tracking-wide">CONSULTATIONS</h3>
+            </div>
+            <div class="relative bg-white overflow-hidden shadow-md w-full h-64 hover:bg-gray-800 transition duration-300 ease-in-out">
+                <img src="strategy.jpeg" alt="Strategy" class="w-full h-full object-cover opacity-100 hover:opacity-75 transition-opacity duration-300">
+                <h3 class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold tracking-wide">STRATEGY</h3>
+            </div>
+            <div class="relative bg-white overflow-hidden shadow-md w-full h-64 hover:bg-gray-800 transition duration-300 ease-in-out">
+                <img src="investment.jpg" alt="Investment" class="w-full h-full object-cover opacity-100 hover:opacity-75 transition-opacity duration-300">
+                <h3 class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold tracking-wide">INVESTMENT</h3>
+            </div>
+            <div class="relative bg-white overflow-hidden shadow-md w-full h-64 hover:bg-gray-800 transition duration-300 ease-in-out">
+                <img src="marketting.jpeg" alt="Marketing" class="w-full h-full object-cover opacity-100 hover:opacity-75 transition-opacity duration-300">
+                <h3 class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold tracking-wide">MARKETING</h3>
+            </div>
+            <div class="relative bg-white overflow-hidden shadow-md w-full h-64 hover:bg-gray-800 transition duration-300 ease-in-out">
+                <img src="startups.jpeg" alt="Startups" class="w-full h-full object-cover opacity-100 hover:opacity-75 transition-opacity duration-300">
+                <h3 class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold tracking-wide">STARTUPS</h3>
+            </div>
+            <div class="relative bg-white overflow-hidden shadow-md w-full h-64 hover:bg-gray-800 transition duration-300 ease-in-out">
+                <img src="crisis.jpeg" alt="Anti-crisis" class="w-full h-full object-cover opacity-100 hover:opacity-75 transition-opacity duration-300">
+                <h3 class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold tracking-wide">ANTI-CRISIS</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- this is for services page -->
+     <!-- using flex to align items within two containers -->
+    <div class="flex justify-center items-center py-16 bg-gray-100">
+        <div class="flex w-4/5 max-w-6xl h-[650px] overflow-hidden bg-white">
+            <div class="w-1/2 flex justify-center items-center">
+                <img src="testimage.jpg" alt="Sample Image" class="w-full h-full object-cover">
+            </div>
+            <div class="w-1/2 flex flex-col justify-between mocha-green p-8 relative">
+                <h1 class="text-5xl font-bold text-white px-14">We provide value<br> of our clients</h1>
+                <div class="flex justify-between items-center w-full mt-16">
+                    <button class="px-4 py-2 bg-gray-500 bg-opacity-10 text-white hover:text-gray-800 transition duration-300"><</button>
+                    <div class="flex flex-col justify-start text-left px-4 py-2 max-w-sm">
+                        <p class="text-white text-lg leading-relaxed">The consulting firm provided exceptional service and valuable insights that significantly contributed to the success of our project. Their team demonstrated deep expertise in the field, delivering innovative solutions tailored to our specific needs.</p>
+                        <p class="mt-4 text-white font-bold text-xl">Nat Reynolds</p>
+                        <p class="text-white text-sm">Developer, co-founder</p>
+                    </div>
+                    <button class="px-4 py-2 bg-gray-500 bg-opacity-10 text-white hover:text-gray-800 transition duration-300">></button>
+                </div>
+                <div class="mt-4 px-16 pb-10">
+                    <p class="text-xs text-white opacity-75">Images from <a href="#" class="underline">Freepik</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- FAQ page -->
+       <!-- hover effects like dropdown and creating div for multiple questions -->
+      <div class="w-full bg-black py-12 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+        <div class="md:w-1/2 px-6">
+            <h1 class="text-4xl font-bold mb-6 text-white">FAQ</h1>
+            <p class="text-gray-400 mb-4">Sample text. Click to select the text box. Click again or double-click to start editing the text. Image from <a href="#" class="underline">Freepik</a></p>
+            <div class="divide-y divide-white">
+                <details class="bg-black border-b-2 border-white p-6 cursor-pointer">
+                    <summary aria-expanded="false" class="text-lg font-semibold text-white">Am I Eligible To Sign Up To Attend?</summary>
+                    <p class="mt-2 text-gray-400">Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien.</p>
+                </details>
+                <details class="bg-black border-b-2 border-white p-6 cursor-pointer">
+                    <summary aria-expanded="false" class="text-lg font-semibold text-white">What Type Of Things Should We Build?</summary>
+                    <p class="mt-2 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien.</p>
+                </details>
+                <details class="bg-black border-b-2 border-white p-6 cursor-pointer">
+                    <summary aria-expanded="false" class="text-lg font-semibold text-white">Does This Guarantee Me A Spot In The Hack?</summary>
+                    <p class="mt-2 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien.</p>
+                </details>
+                <details class="bg-black border-b-2 border-white p-6 cursor-pointer">
+                    <summary aria-expanded="false" class="text-lg font-semibold text-white">What Language Or Platform Can I Use?</summary>
+                    <p class="mt-2 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien.</p>
+                </details>
+            </div>
+        </div>
+        <div class="md:w-1/2">
+            <img src="faqman.jpg" alt="A business meeting with people discussing ideas" class="w-full h-auto shadow-lg">
+        </div>
+    </div>
+
+    <!-- Case Studies page -->
+    <div class="container mx-auto py-10">
+        <h1 class="text-center text-4xl font-bold mb-6">Case Studies & Stories</h1>
+        <p class="text-center text-lg mb-10">See how we create 360° Value and help clients become the next and best versions of themselves.</p>
+        
+        <!-- Grid for case studies -->
+         <!-- a card contains two container(div) for contents and image -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="relative bg-white shadow-lg w-full h-[300px]">
+                <img src="p1.jpg" alt="Project 1" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 right-0 w-3/5 h-[60%] mocha-green text-white p-4">
+                    <h2 class="text-2xl font-bold">Project 01</h2>
+                    <p class="mt-2">Sample text. Click to select the Text Element.</p>
+                </div>
+            </div>
+
+            
+            <div class="relative bg-white shadow-lg w-full h-[300px]">
+                <img src="p2.jpg" alt="Project 2" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 right-0 w-3/5 h-[60%] mocha-green text-white p-4">
+                    <h2 class="text-2xl font-bold">Project 02</h2>
+                    <p class="mt-2">Sample text. Click to select the Text Element.</p>
+                </div>
+            </div>
+
+            
+            <div class="relative bg-white shadow-lg w-full h-[300px]">
+                <img src="p3.jpeg" alt="Project 3" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 right-0 w-3/5 h-[60%] mocha-green text-white p-4">
+                    <h2 class="text-2xl font-bold">Project 03</h2>
+                    <p class="mt-2">Sample text. Click to select the Text Element.</p>
+                </div>
+            </div>
+
+            
+            <div class="relative bg-white shadow-lg w-full h-[300px]">
+                <img src="p4.jpg" alt="Project 4" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 right-0 w-3/5 h-[60%] mocha-green text-white p-4">
+                    <h2 class="text-2xl font-bold">Project 04</h2>
+                    <p class="mt-2">Sample text. Click to select the Text Element.</p>
+                </div>
+            </div>
+
+            
+            <div class="relative bg-white shadow-lg w-full h-[300px]">
+                <img src="p5.jpg" alt="Project 5" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 right-0 w-3/5 h-[60%] mocha-green text-white p-4">
+                    <h2 class="text-2xl font-bold">Project 05</h2>
+                    <p class="mt-2">Sample text. Click to select the Text Element.</p>
+                </div>
+            </div>
+
+            
+            <div class="relative bg-white shadow-lg w-full h-[300px]">
+                <img src="p6.jpg" alt="Project 6" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 right-0 w-3/5 h-[60%] mocha-green text-white p-4">
+                    <h2 class="text-2xl font-bold">Project 06</h2>
+                    <p class="mt-2">Sample text. Click to select the Text Element.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center mt-10">Image from <a href="#" class="text-black underline">Freepik</a></p>
+    </div>
+
+    <!-- About us page -->
+
+    <!-- this is the main div with page background image -->
+    <div class="relative h-screen bg-cover bg-center">
+        <img src="footer.png" alt="foot" class="h-full w-full">
+        
+
+        <!-- this is content container-->
+        <div class="absolute inset-0 flex justify-end items-center pr-16">
+            <div class="bg-white text-black p-8 max-w-lg rounded-lg shadow-lg">
+                <h1 class="text-5xl font-bold mb-6">We offer <br> comprehensive solutions <br>for our clients</h1>
+                
+                <!-- button with centered Text, 60% Width compared to screen, and White strokes to make it distinct -->
+                <a href="#" class="border border-white mocha-green  hover:bg-yellow-500 text-white font-semibold py-3 px-10 w-3/5 text-center block transition duration-300 ease-in-out rounded-lg">
+                    View Recent Projects
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- this is for about information and follow links -->
+    <div class="mocha-green overflow-y-auto h-screen p-8">
+        <div class="max-w-4xl mx-auto space-y-16"><br>
+            
+            <!-- Logo of company -->
+            <div class="flex justify-center">
+                <img src="logo.svg" alt="Logo" class="w-32 h-32">
+            </div>
+
+            
+            <div class="flex justify-between"> <!--spacing evenly between buttons-->
+                <a href="#" class="border border-white mocha-green hover:bg-yellow-500 text-white font-semibold py-3 px-8 rounded-2xl transition duration-300 ease-in-out">
+                    loction
+                </a>
+                <a href="#" class="border border-white mocha-green hover:bg-yellow-500 text-white font-semibold py-3 px-8 rounded-2xl transition duration-300 ease-in-out">
+                    Email
+                </a>
+                <a href="#" class="border border-white mocha-green hover:bg-yellow-500 text-white font-semibold py-3 px-8 rounded-2xl transition duration-300 ease-in-out">
+                    service hours
+                </a>
+            </div><br><br><br><br><br>
+
+            <!--follow links -->
+            <!-- button hover duration and type of transition are specified for each follow link div -->
+            <div class="flex justify-center space-x-8">
+                <a href="#" class="block w-12 h-12 rounded-full overflow-hidden relative">
+                    <img src="fb - Copy.jpeg" alt="Image 1" class="w-full h-full object-cover transition duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition duration-300 ease-in-out"></div>
+                </a>
+                <a href="#" class="block w-12 h-12 rounded-full overflow-hidden relative">
+                    <img src="twitter.jpg" alt="Image 2" class="w-full h-full object-cover transition duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition duration-300 ease-in-out"></div>
+                </a>
+                <a href="#" class="block w-12 h-12 rounded-full overflow-hidden relative">
+                    <img src="instagram.png" alt="Image 3" class="w-full h-full object-cover transition duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition duration-300 ease-in-out"></div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full bg-gray-800 text-white text-center py-8">
+        <p class="text-sm">Sample text. Click to select the textbox. click again or double <br> click to start editing the text </p>
+    </footer>
+
+</body>
+</html>
+
