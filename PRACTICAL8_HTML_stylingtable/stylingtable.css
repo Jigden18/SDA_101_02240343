@@ -1,0 +1,19 @@
+table,tr,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.head{
+    background-color: skyblue;
+}
+
+table{
+    background-color: aqua ;
+    
+}
+
+
+
