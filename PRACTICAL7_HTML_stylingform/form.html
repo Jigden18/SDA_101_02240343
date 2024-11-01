@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Form</title>
+    <link rel="stylesheet" href="stylingform.css">
+</head>
+<body>
+    <h1>Hostel Maintenance Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your Name">
+
+        <label for="block">Select your block:</label>
+        <select name="block" id="block">
+            <option value="H1">H1</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+            <option value="H4">H4</option>
+            <option value="H5">H5</option>
+            <option value="G1">G1</option>
+            <option value="G2">G2</option>
+            <option value="G3">G3</option>
+            <option value="G4">G4</option>
+            <option value="G5">G5</option>
+            <option value="F1">F1</option>
+            <option value="F2">F2</option>
+        </select>
+
+        <label for="hostel">Hostel:</label>
+        <select name="hostel" id="hostel">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+            <option value="d">D</option>
+        </select>
+
+        <label for="issuetype">Select the type of issue:</label>
+        <select name="issuetype" id="issuetype">
+            <option value="door">Door</option>
+            <option value="windows">Windows</option>
+            <option value="bathroom">Bathroom</option>
+            <option value="kitchen">Kitchen</option>
+            <option value="furnitures">Furnitures</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" placeholder="Describe your issue here.">
+
+        <label for="urgency">Urgency:</label>
+        <select name="ulevel" id="urgency">
+            <option value="minimal">Minimal</option>
+            <option value="moderate">Moderate</option>
+            <option value="urgent">Urgent</option>
+        </select>
+
+        <button type="button" onclick="alert('Form Submitted')">SUBMIT</button>
+    </form>
+</body>
+</html>

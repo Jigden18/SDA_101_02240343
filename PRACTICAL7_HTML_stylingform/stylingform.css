@@ -1,0 +1,67 @@
+body {
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the form title */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+/* Centering the form */
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Styling the form labels and boxes */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+/* Styling input fields */
+input[type="text"], select {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Special styling for the description input box */
+input[placeholder="Describe your issue here."] {
+    height: 150px;
+    resize: vertical;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
