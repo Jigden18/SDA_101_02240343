@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component Card</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <h1>Web Component Card</h1>
+
+    <!--this is for card -->
+    <my-card 
+        card-title="Card Title" 
+        card-subtitle="Card Subtitle" 
+        card-background="#f0f0f0"
+        card-border-color="#ccc"
+        card-radius="12px"
+    >
+        <!--header-->
+        <div slot="header">
+            <h2>Random Dachshund Images</h2>
+        </div>
+
+        <!--content -->
+        <div slot="content">
+            <!-- The image will be inserted here by the JS code -->
+        </div>
+
+        <!-- footer -->
+        <div slot="footer" style="text-align: center;">
+            <p>@Dachshund</p>
+        </div>
+    </my-card>
+
+    <script src="card.js"></script>
+</body>
+</html>
