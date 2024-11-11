@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans leading-relaxed">
+
+  <!--the outer container with white background-->
+  <div class="max-w-full md:max-w-2xl lg:max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 bg-white shadow-md rounded-lg">
+
+    <header class="text-center mb-8 sm:mb-12">
+      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-blue-600">Welcome to My Webpage</h1>
+    </header>
+
+    <!--this is the main content to fit our content and images-->
+    <main class="text-center">
+      <p class="mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg text-gray-800">
+        This webpage demonstrates an interactive button and responsive structure with TailwindCSS classes.
+      </p>
+      <img src="frogmeme.jpg" alt="image1" class="mx-auto mb-6 rounded-full w-32 h-32 object-cover">
+      <p class="mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg text-gray-800">
+        Try hovering over the button below!
+      </p>
+      
+      <!--This is for button with hover effects(color change to dark blue and size increases)-->
+      <button class="px-6 sm:px-8 py-2 sm:py-3 bg-blue-500 text-white text-sm sm:text-base font-semibold rounded-lg shadow-md transition-transform duration-200 hover:bg-blue-600 hover:scale-105">
+        Yoo hoooo!
+      </button>
+    </main>
+
+    <!--This is a footer with text in center-->
+    <footer class="text-center mt-8 sm:mt-12 text-gray-500 border-t pt-4">
+      <p class="text-sm lg:text-base">Jigden's webpage.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
